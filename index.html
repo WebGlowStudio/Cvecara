@@ -1,1 +1,717 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cvećara Božur — sveže cveće u Beogradu</title>
+  <meta name="description" content="Cvećara Božur, demo sajt cvećare u Beogradu. Buketi, aranžmani, venčanja i dostava. Primer sajta pripremio je WebGlow Studio.">
+  <meta name="theme-color" content="#1f3328">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#sadrzaj">Preskočite na sadržaj</a>
 
+  <header class="site-header" id="vrh">
+    <div class="topbar">
+      <div class="wrap topbar__inner">
+        <span>Dostava po Beogradu</span>
+        <span class="topbar__long">Pon–pet 8–20 · Sub 9–18 · Ned 10–15</span>
+        <span class="topbar__short">Pon–pet 8–20h</span>
+      </div>
+    </div>
+    <div class="wrap bar">
+      <a class="logo" href="#vrh">
+        <svg class="logo__mark" viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="18" fill="#e7efe4"/>
+          <circle cx="18" cy="15" r="5" fill="#e7b7b6"/>
+          <circle cx="14" cy="17" r="3.6" fill="#f3ddd9"/>
+          <circle cx="22" cy="17" r="3.6" fill="#d98996"/>
+          <circle cx="18" cy="19" r="3.2" fill="#fbf8f2"/>
+          <path d="M18 22.5v6" stroke="#6e8664" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M18 25c-3 .8-5 2.4-6 4.2" fill="none" stroke="#8fa384" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__name">Cvećara Božur</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Otvori meni</span>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Glavni meni">
+        <a href="#o-nama">O nama</a>
+        <a href="#ponuda">Ponuda</a>
+        <a href="#buket">Buket</a>
+        <a href="#galerija">Galerija</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="btn" href="#porudzbina">Poruči buket</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="sadrzaj">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="petals" aria-hidden="true">
+        <svg class="petal" viewBox="0 0 40 64" style="left:8%; width:16px; animation-duration:17s; animation-delay:-3s">
+          <path d="M20 2c8 12 15 28 11 44-8 6-18 6-26 0C5 30 10 14 20 2z" fill="#e4c4c2"/>
+        </svg>
+        <svg class="petal petal--leaf" viewBox="0 0 48 64" style="left:22%; animation-name:fall-b; animation-duration:19s; animation-delay:-8s">
+          <path d="M10 60C12 32 24 14 44 4 30 28 20 46 10 60z" fill="#8eae8c"/>
+        </svg>
+        <svg class="petal" viewBox="0 0 40 64" style="left:38%; width:14px; animation-duration:15s; animation-delay:-1s">
+          <path d="M20 4c7 10 12 24 9 40-7 5-16 5-22 0C8 28 12 14 20 4z" fill="#f0ddd4"/>
+        </svg>
+        <svg class="petal petal--leaf" viewBox="0 0 48 64" style="left:54%; width:20px; animation-duration:21s; animation-delay:-12s">
+          <path d="M8 58C14 34 26 16 46 6 32 26 20 44 8 58z" fill="#6e946c"/>
+        </svg>
+        <svg class="petal" viewBox="0 0 40 64" style="left:70%; width:18px; animation-name:fall-b; animation-duration:18s; animation-delay:-6s">
+          <path d="M20 2c9 14 14 30 8 46-8 5-16 4-22-2C6 32 11 14 20 2z" fill="#d7b4be"/>
+        </svg>
+        <svg class="petal petal--leaf" viewBox="0 0 48 64" style="left:84%; width:24px; animation-duration:16s; animation-delay:-9s">
+          <path d="M12 60C14 36 22 16 42 6 28 30 18 48 12 60z" fill="#a9c3a4"/>
+        </svg>
+        <svg class="petal" viewBox="0 0 40 64" style="left:92%; width:12px; animation-name:fall-b; animation-duration:22s; animation-delay:-4s">
+          <path d="M20 6c6 10 10 22 7 36-6 4-14 4-18 0C8 28 12 14 20 6z" fill="#efe4d4"/>
+        </svg>
+      </div>
+      <svg class="sprig sprig--right" viewBox="0 0 80 120" aria-hidden="true">
+        <path d="M40 110C42 70 50 40 70 16" fill="none" stroke="#6e8664" stroke-width="1.4"/>
+        <path d="M48 78c10-8 16-8 24-4-8 2-14 6-18 12-2-2-4-6-6-8z" fill="#8fa384"/>
+        <path d="M46 56c12-6 20-4 28 2-10 0-18 4-24 10-1-4-3-8-4-12z" fill="#b7c7aa"/>
+        <path d="M52 36c8-8 16-8 24-2-8 1-14 5-18 10-2-2-4-6-6-8z" fill="#6e8664"/>
+      </svg>
+
+      <div class="wrap hero__grid">
+        <figure class="hero__visual">
+          <div class="hero__frame">
+            <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&amp;fit=crop&amp;w=1400&amp;q=75" width="900" height="1125" alt="Stock fotografija: nežan buket ruža i božura sa zelenilom" fetchpriority="high">
+            <p class="hero__float"><strong>Složeno s pažnjom</strong><span>Sveže cveće, vezano u ruci</span></p>
+          </div>
+          <figcaption>Stock fotografija · Unsplash</figcaption>
+        </figure>
+        <div class="hero__copy">
+          <p class="kicker">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13C5 7 8 4 14 2c-1 5-4 8-9 10 2-1 3-3 4-5" fill="none" stroke="#3e5644" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Sveže cveće · Beograd
+          </p>
+          <h1 id="hero-title">Najlepše cveće, složeno s ljubavlju</h1>
+          <p class="lede">Bukete slažemo polako, od cveća koje je stiglo tog jutra. Recite nam kome ide i kakav je povod — složićemo buket, napisaćemo karticu vašim rečima i, ako želite, dovešćemo ga do vrata.</p>
+          <div class="btn-row">
+            <a class="btn" href="#porudzbina">Poruči buket</a>
+            <a class="btn btn--ghost" href="#buket">Složi svoj buket</a>
+          </div>
+          <ul class="facts">
+            <li>Sveže svakog jutra</li>
+            <li>Dostava po Beogradu</li>
+            <li>Kartica vašim rečima</li>
+          </ul>
+        </div>
+      </div>
+      <svg class="sprig sprig--left" viewBox="0 0 90 70" aria-hidden="true">
+        <path d="M8 60C30 58 48 40 70 14" fill="none" stroke="#6e8664" stroke-width="1.4"/>
+        <path d="M28 52c2-12 8-16 16-16-2 8-8 14-16 16z" fill="#8fa384"/>
+        <path d="M44 38c6-10 14-12 22-8-6 6-12 10-20 10-1-1-2-1-2-2z" fill="#b7c7aa"/>
+      </svg>
+    </section>
+
+    <section class="section reveal" id="o-nama">
+      <div class="wrap about__grid">
+        <figure class="about__photo">
+          <img src="https://images.unsplash.com/photo-1487070183336-b863922373d4?auto=format&amp;fit=crop&amp;w=1200&amp;q=75" width="1200" height="960" alt="Stock fotografija: cvećara sa saksijama i buketima ispred ulaza" loading="lazy">
+          <figcaption>Stock fotografija · Unsplash</figcaption>
+        </figure>
+        <div>
+          <p class="kicker">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13C5 7 8 4 14 2c-1 5-4 8-9 10 2-1 3-3 4-5" fill="none" stroke="#3e5644" stroke-width="1.3" stroke-linecap="round"/></svg>
+            O nama
+          </p>
+          <h2>Mala radnja, miran buket</h2>
+          <p>Cvećara Božur je mala beogradska radnja. Ne volimo bukete koji izgledaju kao da su složeni na traci. Volimo da se vidi stabljika, da papir bude mirne boje i da cveće diše.</p>
+          <p>Ako niste sigurni šta da izaberete, javite nam se. Pitamo vas samo ono što nam treba: kome cveće ide, kakav je povod i da li vam prija nešto tiše ili raskošnije.</p>
+          <ul class="points">
+            <li><strong>Jutarnja nabavka</strong><span>Biramo cveće dok je još čvrsto, pre nego što grad krene u žurbi.</span></li>
+            <li><strong>Kartica vašim rečima</strong><span>Pišemo tačno onako kako nam kažete, pa i ako je rečenica kratka.</span></li>
+            <li><strong>Pažljiva vožnja</strong><span>Buket stiže uredan, bez izgužvanog papira i slomljenih glavica.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band reveal" id="ponuda">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="kicker">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13C5 7 8 4 14 2c-1 5-4 8-9 10 2-1 3-3 4-5" fill="none" stroke="#3e5644" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Ponuda
+          </p>
+          <h2>Šta možete da poručite</h2>
+          <p class="lede">Izaberite vrstu, a cveće biramo prema onome što je tog dana lepo. Iznosi služe da pokažu kako ponuda izgleda na sajtu.</p>
+        </div>
+        <div class="banner">
+          <p class="price-flag">Cene su primer</p>
+          <p class="note">U radnji zavise od sezone i dogovora. Ovde su tu da vidite raspored i jasnoću.</p>
+        </div>
+        <div class="offer-grid">
+          <article class="offer">
+            <div class="offer__top">
+              <span class="offer__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1f3328" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="2.2"/><circle cx="14" cy="7" r="2.6"/><circle cx="12" cy="12" r="2.4"/><path d="M9 14c0 4 1 7 3 8M13 14c.4 3 1.4 6 3 7"/></svg>
+              </span>
+              <span class="offer__num serif">01</span>
+            </div>
+            <h3>Buketi</h3>
+            <p>Klasični i sezonski, vezani u ruci, sa zelenilom koje drži oblik.</p>
+            <ul class="prices">
+              <li><span>Mali</span><span>2.400 RSD</span></li>
+              <li><span>Srednji</span><span>3.900 RSD</span></li>
+              <li><span>Raskošni</span><span>6.800 RSD</span></li>
+            </ul>
+            <p class="price-flag">Cene su primer</p>
+          </article>
+
+          <article class="offer">
+            <div class="offer__top">
+              <span class="offer__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1f3328" stroke-width="1.5"><path d="M8 10h8l-1 9H9l-1-9z"/><path d="M9 10c0-3 6-3 6 0"/><circle cx="12" cy="6" r="1.4" fill="#c9898a" stroke="none"/></svg>
+              </span>
+              <span class="offer__num serif">02</span>
+            </div>
+            <h3>Aranžmani</h3>
+            <p>Cveće u vazi, kutiji ili na niskoj podlozi — spremno da se spusti na sto.</p>
+            <ul class="prices">
+              <li><span>U kutiji</span><span>3.600 RSD</span></li>
+              <li><span>U vazi</span><span>4.400 RSD</span></li>
+              <li><span>Za sto</span><span>5.200 RSD</span></li>
+            </ul>
+            <p class="price-flag">Cene su primer</p>
+          </article>
+
+          <article class="offer">
+            <div class="offer__top">
+              <span class="offer__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1f3328" stroke-width="1.5" stroke-linecap="round"><path d="M9 11h6l-1 8H10l-1-8z"/><path d="M12 11V7"/><path d="M12 8c2-2 4-2 5-1M12 9c-2-2-4-1-5 0"/></svg>
+              </span>
+              <span class="offer__num serif">03</span>
+            </div>
+            <h3>Cveće u saksiji</h3>
+            <p>Biljke koje ostaju i posle praznika: orhideje, zelenilo i male saksije za prozor.</p>
+            <ul class="prices">
+              <li><span>Mala saksija</span><span>1.800 RSD</span></li>
+              <li><span>Orhideja</span><span>3.200 RSD</span></li>
+              <li><span>Veća biljka</span><span>4.600 RSD</span></li>
+            </ul>
+            <p class="price-flag">Cene su primer</p>
+          </article>
+
+          <article class="offer offer--wedding">
+            <div class="offer__top">
+              <span class="offer__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1f3328" stroke-width="1.5"><path d="M4 16c2-6 4-9 8-9s6 3 8 9"/><circle cx="12" cy="7" r="1.5" fill="#c9bdd6" stroke="none"/><path d="M8 16h8"/></svg>
+              </span>
+              <span class="offer__num serif">04</span>
+            </div>
+            <h3>Venčanja i dekoracija</h3>
+            <p>Buket za mladu, reveri i cveće za stolove. Dogovaramo se na miru, uz probe boja.</p>
+            <ul class="prices">
+              <li><span>Buket za mladu</span><span>od 8.500 RSD</span></li>
+              <li><span>Sto za goste</span><span>od 2.200 RSD</span></li>
+              <li><span>Dekoracija sale</span><span>od 28.000 RSD</span></li>
+            </ul>
+            <p class="price-flag">Cene su primer</p>
+          </article>
+
+          <article class="offer offer--quiet">
+            <div class="offer__top">
+              <span class="offer__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#3e5644" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="6"/><path d="M12 6c-1 2-1 4 0 6s1 4 0 6M6 12c2-1 4-1 6 0s4 1 6 0"/></svg>
+              </span>
+              <span class="offer__num serif">05</span>
+            </div>
+            <h3>Pogrebni aranžmani</h3>
+            <p>Venci i mirni aranžmani, složeni s poštovanjem. Dostavu na beogradska groblja dogovaramo diskretno, u vreme koje vama odgovara.</p>
+            <ul class="prices">
+              <li><span>Mali aranžman</span><span>4.800 RSD</span></li>
+              <li><span>Venac</span><span>9.500 RSD</span></li>
+              <li><span>Po dogovoru</span><span>na upit</span></li>
+            </ul>
+            <p class="price-flag">Cene su primer</p>
+          </article>
+
+          <article class="offer">
+            <div class="offer__top">
+              <span class="offer__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1f3328" stroke-width="1.5" stroke-linejoin="round"><rect x="5" y="10" width="14" height="9" rx="1"/><path d="M5 13h14M12 10v9M8 10c0-2 8-2 8 0"/></svg>
+              </span>
+              <span class="offer__num serif">06</span>
+            </div>
+            <h3>Poklon paketi</h3>
+            <p>Buket, kartica i mala sveća ili čokolada — spakovano tako da možete da ga pružite odmah.</p>
+            <ul class="prices">
+              <li><span>Buket i kartica</span><span>2.900 RSD</span></li>
+              <li><span>Buket i sveća</span><span>3.600 RSD</span></li>
+              <li><span>Svečani paket</span><span>5.400 RSD</span></li>
+            </ul>
+            <p class="price-flag">Cene su primer</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="buket">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="kicker">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13C5 7 8 4 14 2c-1 5-4 8-9 10 2-1 3-3 4-5" fill="none" stroke="#3e5644" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Vaš izbor
+          </p>
+          <h2>Složi svoj buket</h2>
+          <p class="lede">Izaberite cveće i boju papira. Crtež se menja odmah, a iznos je primer cene — da vidite kako bi računica izgledala kada poručujete.</p>
+        </div>
+
+        <div class="builder">
+          <div class="builder__stage">
+            <svg class="bouquet" id="bouquet" viewBox="0 0 320 430" role="img" aria-labelledby="bouquetTitle">
+              <title id="bouquetTitle">Ilustrovani pregled buketa</title>
+              <defs>
+                <g id="bloom-ruza">
+                  <circle r="18" fill="#e4a8af"/>
+                  <path d="M-14-3c5-10 20-12 26-1-8 2-18 3-26 1z" fill="#d98994"/>
+                  <path d="M-11 7c5-9 17-10 22 0-7 4-16 4-22 0z" fill="#c96b7a"/>
+                  <circle r="5.2" fill="#a84f5e"/>
+                  <circle cx="-1.4" cy="-1" r="1.5" fill="#f6e4e6"/>
+                </g>
+                <g id="bloom-tulipan">
+                  <path d="M0 20C-8 16-18 6-16-12-10-6-5-2-1-2-3-12 0-22 0-22 0-22 3-12 1-2 5-2 10-6 16-12 18 6 8 16 0 20Z" fill="#e08a78"/>
+                  <path d="M0 18C-2 6-2-6 0-16 2-6 2 6 0 18Z" fill="#c45d52"/>
+                </g>
+                <g id="bloom-bozur">
+                  <circle cx="-9" cy="-6" r="12" fill="#f3d0d2"/>
+                  <circle cx="9" cy="-7" r="11" fill="#f0c4c8"/>
+                  <circle cx="-10" cy="7" r="11" fill="#eab8bf"/>
+                  <circle cx="10" cy="8" r="12" fill="#e7b3bc"/>
+                  <circle r="8" fill="#de9aa6"/>
+                  <circle r="3.4" fill="#c97886"/>
+                </g>
+                <g id="bloom-gerber">
+                  <g fill="#e0a07a">
+                    <ellipse rx="3.6" ry="14" transform="rotate(0)"/>
+                    <ellipse rx="3.6" ry="14" transform="rotate(36)"/>
+                    <ellipse rx="3.6" ry="14" transform="rotate(72)"/>
+                    <ellipse rx="3.6" ry="14" transform="rotate(108)"/>
+                    <ellipse rx="3.6" ry="14" transform="rotate(144)"/>
+                    <ellipse rx="3.6" ry="14" transform="rotate(180)"/>
+                    <ellipse rx="3.6" ry="14" transform="rotate(216)"/>
+                    <ellipse rx="3.6" ry="14" transform="rotate(252)"/>
+                    <ellipse rx="3.6" ry="14" transform="rotate(288)"/>
+                    <ellipse rx="3.6" ry="14" transform="rotate(324)"/>
+                  </g>
+                  <g fill="#d48968">
+                    <ellipse rx="2.4" ry="8" transform="rotate(18)"/>
+                    <ellipse rx="2.4" ry="8" transform="rotate(54)"/>
+                    <ellipse rx="2.4" ry="8" transform="rotate(90)"/>
+                    <ellipse rx="2.4" ry="8" transform="rotate(126)"/>
+                    <ellipse rx="2.4" ry="8" transform="rotate(162)"/>
+                    <ellipse rx="2.4" ry="8" transform="rotate(198)"/>
+                    <ellipse rx="2.4" ry="8" transform="rotate(234)"/>
+                    <ellipse rx="2.4" ry="8" transform="rotate(270)"/>
+                    <ellipse rx="2.4" ry="8" transform="rotate(306)"/>
+                    <ellipse rx="2.4" ry="8" transform="rotate(342)"/>
+                  </g>
+                  <circle r="5.5" fill="#f0d59a"/>
+                  <circle r="2.6" fill="#d7b15a"/>
+                </g>
+                <g id="bloom-lala">
+                  <path d="M0 18C-14 10-20-2-14-16-8-6-3-4 0-4 3-4 8-6 14-16 20-2 14 10 0 18Z" fill="#cbb6de"/>
+                  <path d="M0 16C0 4 0-8 0-16" fill="none" stroke="#9b7eb4" stroke-width="1.4"/>
+                  <path d="M-8 2C-14-6-12-14-6-16" fill="none" stroke="#b89acf" stroke-width="1.6" stroke-linecap="round"/>
+                  <path d="M8 2C14-6 12-14 6-16" fill="none" stroke="#b89acf" stroke-width="1.6" stroke-linecap="round"/>
+                </g>
+                <g id="bloom-list">
+                  <path d="M2 16C14-2 28-12 34-14 26-2 14 12 2 18 0 14 0 14 2 16Z" fill="#7ea184"/>
+                  <path d="M8 14C16 4 24-4 28-6" fill="none" stroke="#4f6b52" stroke-width="0.8"/>
+                </g>
+              </defs>
+              <ellipse cx="160" cy="400" rx="74" ry="9" fill="rgba(31,51,40,0.08)"/>
+              <g id="bouquetLeaves"></g>
+              <g id="bouquetStems"></g>
+              <g id="bouquetBlooms"></g>
+              <g id="bouquetWrap">
+                <path id="wrapShape" d="M118 258C106 300 102 338 128 378H192C218 338 214 300 202 258 180 278 140 278 118 258Z" fill="#f3ead8"/>
+                <path id="wrapRibbon" d="M104 314C140 302 186 302 218 318L210 336C178 322 136 322 110 338Z" fill="#6e8664"/>
+                <path d="M150 268C144 310 142 344 154 376" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="2"/>
+              </g>
+              <g id="bouquetLeavesFront"></g>
+            </svg>
+            <p class="builder-empty" data-empty hidden>Dodajte cveće da vidite buket.</p>
+            <p class="note" data-cap hidden>Crtež prikazuje oblik buketa, ne svaku stabljiku.</p>
+            <dl class="sum">
+              <div><dt>Cveće</dt><dd data-sum-flowers>2.300 RSD</dd></div>
+              <div><dt>Papir i zelenilo</dt><dd data-sum-wrap>450 RSD</dd></div>
+              <div class="sum__total"><dt>Primer cene</dt><dd data-sum-total>2.750 RSD</dd></div>
+            </dl>
+            <p class="price-flag">Cene su primer</p>
+            <p class="sr-only" id="builder-live" aria-live="polite"></p>
+          </div>
+
+          <div class="builder__controls">
+            <div class="flower" data-flower="ruza">
+              <div class="flower__meta">
+                <span class="flower__name">Ruže</span>
+                <span class="flower__hint">Klasične, pune glavice · 280 RSD</span>
+              </div>
+              <div class="stepper" role="group" aria-label="Ruže, trenutno 3">
+                <button type="button" data-dir="-1" aria-label="Manje ruža">−</button>
+                <span class="stepper__n" data-count>3</span>
+                <button type="button" data-dir="1" aria-label="Više ruža">+</button>
+              </div>
+            </div>
+            <div class="flower" data-flower="tulipan">
+              <div class="flower__meta">
+                <span class="flower__name">Tulipani</span>
+                <span class="flower__hint">Visoki, čistog oblika · 190 RSD</span>
+              </div>
+              <div class="stepper" role="group" aria-label="Tulipani, trenutno 0">
+                <button type="button" data-dir="-1" aria-label="Manje tulipana">−</button>
+                <span class="stepper__n" data-count>0</span>
+                <button type="button" data-dir="1" aria-label="Više tulipana">+</button>
+              </div>
+            </div>
+            <div class="flower" data-flower="bozur">
+              <div class="flower__meta">
+                <span class="flower__name">Božuri</span>
+                <span class="flower__hint">Sezonski i raskošni · 520 RSD</span>
+              </div>
+              <div class="stepper" role="group" aria-label="Božuri, trenutno 2">
+                <button type="button" data-dir="-1" aria-label="Manje božura">−</button>
+                <span class="stepper__n" data-count>2</span>
+                <button type="button" data-dir="1" aria-label="Više božura">+</button>
+              </div>
+            </div>
+            <div class="flower" data-flower="gerber">
+              <div class="flower__meta">
+                <span class="flower__name">Gerberi</span>
+                <span class="flower__hint">Vedri, dugo stoje u vazi · 220 RSD</span>
+              </div>
+              <div class="stepper" role="group" aria-label="Gerberi, trenutno 0">
+                <button type="button" data-dir="-1" aria-label="Manje gerbera">−</button>
+                <span class="stepper__n" data-count>0</span>
+                <button type="button" data-dir="1" aria-label="Više gerbera">+</button>
+              </div>
+            </div>
+            <div class="flower" data-flower="lala">
+              <div class="flower__meta">
+                <span class="flower__name">Lale</span>
+                <span class="flower__hint">Baštenske, nešto punije · 210 RSD</span>
+              </div>
+              <div class="stepper" role="group" aria-label="Lale, trenutno 2">
+                <button type="button" data-dir="-1" aria-label="Manje lala">−</button>
+                <span class="stepper__n" data-count>2</span>
+                <button type="button" data-dir="1" aria-label="Više lala">+</button>
+              </div>
+            </div>
+
+            <fieldset class="papers">
+              <legend>Boja papira</legend>
+              <div class="swatches">
+                <label class="swatch">
+                  <input type="radio" name="papir" value="krem" data-name="krem" checked>
+                  <span class="swatch__dot" style="--c:#f3ead8"></span>
+                  Krem
+                </label>
+                <label class="swatch">
+                  <input type="radio" name="papir" value="zalfija" data-name="žalfija">
+                  <span class="swatch__dot" style="--c:#b7c7aa"></span>
+                  Žalfija
+                </label>
+                <label class="swatch">
+                  <input type="radio" name="papir" value="bozur" data-name="božur">
+                  <span class="swatch__dot" style="--c:#f0d2cd"></span>
+                  Božur
+                </label>
+                <label class="swatch">
+                  <input type="radio" name="papir" value="suma" data-name="šuma">
+                  <span class="swatch__dot" style="--c:#2f4a3c"></span>
+                  Šuma
+                </label>
+                <label class="swatch">
+                  <input type="radio" name="papir" value="lila" data-name="lila">
+                  <span class="swatch__dot" style="--c:#ddd0e6"></span>
+                  Lila
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="builder__actions">
+              <button class="btn" type="button" id="use-bouquet">Upišite buket u porudžbinu</button>
+              <p class="inline-status" data-builder-status role="status"></p>
+            </div>
+            <p class="note">Papir i malo zelenila računamo kada u buketu ima cveća. Cene su primer, a crtež je ilustracija, ne fotografija.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band reveal" id="dostava">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="kicker">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13C5 7 8 4 14 2c-1 5-4 8-9 10 2-1 3-3 4-5" fill="none" stroke="#3e5644" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Dostava
+          </p>
+          <h2>Dostava po Beogradu</h2>
+          <p class="lede">Vozimo po celom gradu, od Zemunskog keja do Mirijeva. Istog dana stižemo ako poručite do 16 časova, nedeljom do 13. Jutarnja tura ide do 13 časova, popodnevna do 19.</p>
+          <p class="lede">Ako vam je važan tačan sat — venčanje, bolnica ili iznenađenje — recite nam. Reći ćemo iskreno da li stignemo. Groblja i bolnice dogovaramo uz kratak poziv oko ulaza.</p>
+        </div>
+        <div class="zone-grid">
+          <article class="zone">
+            <h3>Uži centar</h3>
+            <p>Stari grad, Vračar, Savski venac.</p>
+            <strong>400 RSD</strong>
+          </article>
+          <article class="zone">
+            <h3>Širi grad</h3>
+            <p>Novi Beograd, Zemun, Voždovac, Čukarica.</p>
+            <strong>600 RSD</strong>
+          </article>
+          <article class="zone">
+            <h3>Periferija</h3>
+            <p>Mirijevo, Batajnica, Sremčica i dalje.</p>
+            <strong>800 RSD</strong>
+          </article>
+        </div>
+        <p class="price-flag" style="margin-top:16px">Cene su primer</p>
+      </div>
+    </section>
+
+    <section class="section reveal" id="galerija">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="kicker">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13C5 7 8 4 14 2c-1 5-4 8-9 10 2-1 3-3 4-5" fill="none" stroke="#3e5644" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Galerija
+          </p>
+          <h2>Buketi i radnja</h2>
+          <p class="lede">Fotografije su besplatne stock fotografije (Unsplash) i označene su kao stock. Na pravom sajtu ovde bi stajali vaši buketi, sa stola i iz ruku.</p>
+        </div>
+        <div class="gallery">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1572454591674-2739f30d8c40?auto=format&amp;fit=crop&amp;w=1200&amp;q=75" width="1200" height="1500" alt="Stock fotografija: buket breskva ruža i sitnog cveća" loading="lazy">
+            <figcaption>Stock · Unsplash</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&amp;fit=crop&amp;w=900&amp;q=75" width="900" height="900" alt="Stock fotografija: buket ruža, bobica i zelenila" loading="lazy">
+            <figcaption>Stock · Unsplash</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&amp;fit=crop&amp;w=900&amp;q=75" width="900" height="900" alt="Stock fotografija: buket ružičastih tulipana" loading="lazy">
+            <figcaption>Stock · Unsplash</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&amp;fit=crop&amp;w=900&amp;q=75" width="900" height="900" alt="Stock fotografija: krem i roze ruže u vazi" loading="lazy">
+            <figcaption>Stock · Unsplash</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&amp;fit=crop&amp;w=900&amp;q=75" width="900" height="900" alt="Stock fotografija: prašnjasto roze ruže izbliza" loading="lazy">
+            <figcaption>Stock · Unsplash</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1469259943454-aa100abba749?auto=format&amp;fit=crop&amp;w=900&amp;q=75" width="900" height="900" alt="Stock fotografija: kale sa zelenim listovima" loading="lazy">
+            <figcaption>Stock · Unsplash</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band reveal" id="utisci">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="kicker">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13C5 7 8 4 14 2c-1 5-4 8-9 10 2-1 3-3 4-5" fill="none" stroke="#3e5644" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Utisci
+          </p>
+          <h2>Primer utisaka</h2>
+          <p class="lede">Rečenice ispod su izmišljene. To je primer kako utisci mogu da izgledaju na sajtu — nisu recenzije pravih mušterija.</p>
+        </div>
+        <div class="quotes">
+          <blockquote class="quote">
+            <p>„Buket je stigao svež, a na kartici su bile baš one reči koje sam poslala. Mama je pitala u kojoj sam radnji stala.”</p>
+            <footer>Ana M., Vračar</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>„Tražio sam nešto mirno, sa dosta zelenila i malo ružičaste. Dobio sam tačno to, bez ičega suvišnog.”</p>
+            <footer>Nikola P., Novi Beograd</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>„Stolovi na venčanju su izgledali lepo, a cveće nikome nije smetalo da razgovara. Nekoliko gostiju pitalo je ko nam je slagao.”</p>
+            <footer>Jelena i Marko, Senjak</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="porudzbina">
+      <div class="wrap order-layout">
+        <div>
+          <p class="kicker">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13C5 7 8 4 14 2c-1 5-4 8-9 10 2-1 3-3 4-5" fill="none" stroke="#3e5644" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Porudžbina
+          </p>
+          <h2>Recite nam šta vam treba</h2>
+          <p class="lede">Popunite formu. Ovo je demo: podaci ostaju u vašem pregledaču i nigde se ne šalju. Posle klika videćete potvrdu, onako kako bi izgledala na pravom sajtu.</p>
+        </div>
+        <div>
+          <form class="form" id="order-form" action="#porudzbina" method="get" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="ime">Ime i prezime</label>
+                <input id="ime" name="ime" type="text" autocomplete="name" required>
+                <p class="field-error" data-error-for="ime" hidden></p>
+              </div>
+              <div class="field">
+                <label for="telefon">Telefon</label>
+                <input id="telefon" name="telefon" type="tel" autocomplete="tel" inputmode="tel" required>
+                <p class="field-error" data-error-for="telefon" hidden></p>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="email">E-pošta <span class="note">(nije obavezno)</span></label>
+                <input id="email" name="email" type="email" autocomplete="email">
+              </div>
+              <div class="field">
+                <label for="povod">Povod</label>
+                <select id="povod" name="povod">
+                  <option>Rođendan</option>
+                  <option>Godišnjica</option>
+                  <option>Hvala</option>
+                  <option>Izvinjenje</option>
+                  <option>Venčanje</option>
+                  <option>Saosećanje</option>
+                  <option>Bez posebnog povoda</option>
+                  <option>Drugo</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="datum">Kada treba da stigne</label>
+                <input id="datum" name="datum" type="date">
+              </div>
+              <div class="field">
+                <label for="adresa">Deo grada</label>
+                <input id="adresa" name="adresa" type="text" autocomplete="address-level2" placeholder="npr. Vračar">
+              </div>
+            </div>
+            <div class="field">
+              <label for="kartica">Poruka za karticu</label>
+              <textarea id="kartica" name="kartica" rows="3" maxlength="400" placeholder="Reči koje treba da stoje na kartici"></textarea>
+            </div>
+            <div class="field">
+              <label for="napomena">Napomena</label>
+              <textarea id="napomena" name="napomena" rows="3" maxlength="600" placeholder="Buket, boje, ili nešto što treba da znamo"></textarea>
+            </div>
+            <button class="btn" type="submit">Pošaljite demo porudžbinu</button>
+            <p class="form__hint">Ništa se ne šalje. Ovo je primer forme.</p>
+            <noscript><p class="form__hint">Za prikaz demo potvrde potreban je JavaScript. Forma ni tada ništa ne šalje.</p></noscript>
+          </form>
+
+          <div class="confirm" id="order-confirm" hidden>
+            <div class="confirm__mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#1f3328" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17l9-10"/></svg>
+            </div>
+            <h3>Hvala vam</h3>
+            <p data-confirm-text>Ovo je demo potvrda — porudžbina nije poslata.</p>
+            <p>Niko vas neće zvati. WebGlow Studio je pripremio ovaj primer da cvećara vidi kako porudžbina može da izgleda.</p>
+            <button class="btn btn--ghost" type="button" id="confirm-reset">Nova demo porudžbina</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band reveal" id="kontakt">
+      <div class="wrap contact__grid">
+        <div>
+          <p class="kicker">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13C5 7 8 4 14 2c-1 5-4 8-9 10 2-1 3-3 4-5" fill="none" stroke="#3e5644" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Kontakt
+          </p>
+          <h2>Svratite ili se javite</h2>
+          <p>Podaci ispod su primer, da vidite kako blok za kontakt izgleda. Na pravom sajtu ovde bi bili tačan broj, adresa i vreme kada ste u radnji.</p>
+          <dl class="hours">
+            <div><dt>Ponedeljak – petak</dt><dd>08:00–20:00</dd></div>
+            <div><dt>Subota</dt><dd>09:00–18:00</dd></div>
+            <div><dt>Nedelja</dt><dd>10:00–15:00</dd></div>
+          </dl>
+          <ul class="contact-list">
+            <li><strong>Adresa (primer)</strong><br>Cvetni trg 8, Vračar, Beograd</li>
+            <li><strong>Telefon (primer)</strong><br><a href="tel:+381110000000">011 000 00 00</a></li>
+            <li><strong>E-pošta (primer)</strong><br><a href="mailto:zdravo@cvecarabozur.rs">zdravo@cvecarabozur.rs</a></li>
+          </ul>
+        </div>
+        <figure class="map">
+          <svg viewBox="0 0 640 420" role="img" aria-labelledby="mapTitle">
+            <title id="mapTitle">Ilustrovana mapa kvarta, sa označenom primer lokacijom Cvećare Božur</title>
+            <rect width="640" height="420" fill="#e6efe4"/>
+            <path d="M0 300C90 270 150 330 230 300 330 262 390 340 500 308 560 292 600 310 640 292V420H0Z" fill="#d5e4ea"/>
+            <ellipse cx="130" cy="118" rx="100" ry="68" fill="#cfe0c8"/>
+            <path d="M0 168H640" stroke="#fbf8f2" stroke-width="22"/>
+            <path d="M0 248H640" stroke="#fbf8f2" stroke-width="16"/>
+            <path d="M210 0V320" stroke="#fbf8f2" stroke-width="18"/>
+            <path d="M430 20V400" stroke="#fbf8f2" stroke-width="14"/>
+            <rect x="240" y="48" width="160" height="90" rx="10" fill="#f7f3ea" stroke="#d5e0d2"/>
+            <rect x="460" y="70" width="130" height="72" rx="10" fill="#f4efe6" stroke="#d5e0d2"/>
+            <rect x="36" y="190" width="140" height="36" rx="8" fill="#f7f3ea" stroke="#d5e0d2"/>
+            <rect x="250" y="186" width="150" height="40" rx="8" fill="#fbf8f2" stroke="#d5e0d2"/>
+            <g fill="#7d9a74">
+              <circle cx="88" cy="96" r="16"/>
+              <circle cx="128" cy="78" r="20"/>
+              <circle cx="164" cy="112" r="13"/>
+              <circle cx="104" cy="132" r="11"/>
+              <circle cx="520" cy="200" r="15"/>
+              <circle cx="560" cy="230" r="10"/>
+            </g>
+            <g transform="translate(318 214)">
+              <path d="M0 18c8 0 14-8 14-16C14-8 0-22 0-22S-14-8-14 2c0 8 6 16 14 16z" fill="#c9898a"/>
+              <circle cy="-4" r="4" fill="#fbf8f2"/>
+            </g>
+          </svg>
+          <div class="map__label">
+            <strong>Cvećara Božur</strong>
+            <span>Cvetni trg 8, Vračar</span>
+          </div>
+          <figcaption class="note">Ilustrovana mapa — primer, nije stvarna lokacija.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer__grid">
+      <div>
+        <p class="serif">Cvećara Božur</p>
+        <p>Sveže cveće, složeno s ljubavlju. Beograd.</p>
+        <p class="demo-credit">Demo sajt: WebGlow Studio</p>
+      </div>
+      <div>
+        <p style="margin:0 0 8px; font-weight:500; color:#f6f1e7">Na stranici</p>
+        <ul class="footer__links">
+          <li><a href="#ponuda">Ponuda</a></li>
+          <li><a href="#buket">Složi buket</a></li>
+          <li><a href="#dostava">Dostava</a></li>
+          <li><a href="#galerija">Galerija</a></li>
+          <li><a href="#utisci">Utisci</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <p style="margin:0 0 8px; font-weight:500; color:#f6f1e7">Radno vreme</p>
+        <p>Pon–pet 08–20<br>Subota 09–18<br>Nedelja 10–15</p>
+        <p class="note" style="color:#c9d7c8">Cene, utisci, adresa i fotografije su primer.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
